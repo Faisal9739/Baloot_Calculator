@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <dialog id="modal" class="modal">
+            <h class="modal-h">!!قامت</h>
+            <p class="modal-p">هل تريد البدء بصكة جديدة ؟</p>
+            <button class="yes-btn" id="yes-btn" onclick="resetModal()">نعم</button>
+            <button class="no-btn" id="no-btn" onclick="closeModal()">لا</button>
+        </dialog>
+
+        <dialog id="wld-modal" class="wld-modal">
+            <div class="close-wld-div">
+                <button class="close-wld" onclick="closeWld()">x</button>
+            </div>
+            <div>
+                <button class="wld-modal-btn" onclick="openWldAction()">دق الولد</button>
+            </div>
+            <div>
+                <button class="wld-input-btn" onclick="wldInputBtn()">+</button>
+                <input type="text" class="wld-input" id="wld-input">
+            </div>
+            <ul class="wld-ul" id="wld-ul"></ul>
+        </dialog>
+
+        <dialog class="wld-action" id="wld-action">
+            <div class="close-wld-action-div">
+                <button class="close-wld-action" onclick="closeWldAction()">x</button>
+            </div>
+            <input class="t1" id="t1">
+            <div class="r1-l1">
+                <input class="r1" id="r1">
+                <input class="l1" id="l1">
+            </div>
+            <input class="b1" id="b1">
+            <div class="t2-div">
+                <input class="t2" id="t2">
+            </div>
+            <div class="r2-l2">
+                <input class="r2" id="r2">
+                <input class="l2" id="l2">
+            </div>
+            <input class="b2" id="b2">
+            <div>
+                <button class="wld-ng" id="wld-ng" onclick="wldNg()">ابدأ صكة جديدة</button>
+            </div>
+        </dialog>
+
+        <div class="names">
+            <P class="lname">لهم</P>
+            <p class="rname">لنا</p>
+        </div>
+        <div class="output-div">
+            <input type="number" id="outputl-el" class="outl"> 
+            <input type="number" id="outputr-el" class="outr">     
+        </div>
+        <div class="wld-div">
+            <button class="wld" onclick="wld()">دق الولد</button>
+        </div>
+        <div class="input-div">
+            <input type="number" id="inputl-el" class="in">
+            <input type="number" id="inputr-el" class="in">
+        </div>
+        <div class="button-div">
+            <button class="undo" onclick="undo()">تراجع</button>
+            <button class="rbtn" onclick="a()">سجل</button>
+            <button class="reset" onclick="reset()">صكة جديدة</button>
+        </div>
+        <div class="un-div">
+            <div>
+                <ul id="UnListl" class="un-l"></ul>
+            </div>
+            <div>
+                <ul id="UnListr" class="un-r"></ul>
+            </div>
+        </div>
+        <script src="calc.js"></script>
+    </body>
+</html>
